@@ -1,0 +1,86 @@
+// Размеры контейнера
+$wrap: 1440px;
+$container: 1230px;
+$header-container: 1300px;
+$mc: 0 auto;
+$height-home: 320px;
+
+// Размеры медиазапросов
+/* Medium Device = 1200px */
+$mq_xl: 1199.99px;
+
+/* Tablet Device = 768px */
+$mq_lg: 991.99px;
+
+/* Wide Mobile = 580px */
+$mq_md: 767.99px;
+
+/* Wide Mobile = 480px */
+$mq_sm: 575.99px;
+
+/* Small Device = 320px */
+$mq_xs: 478.99px;
+
+/* Small Device = 280px */
+$mq_xxs: 319.99px;
+
+// Шрифты
+$ff-openSans: "OpenSansS", sans-serif;
+$ff-kurale: "KuraleS", serif;
+$ff-inconsolata: "InconsolataS", sans-serif;
+$ff-pfd: "PlayfairDisplayS", sans-serif;
+$ff-ubuntu: "UbuntuS", sans-serif;
+
+// Текст
+$fs-text: 18px;
+$fs-h1: 50px;
+$fs-h2: 40px;
+$fs-h3: 36px;
+$fs-h4: 28px;
+$fs-h5: 24px;
+$fs-h6: 22px;
+
+// Цвет
+$c-primary: #fed582;
+$c-yellow: #fd920f;
+$c-red: #a52300;
+$c-orange: #e04703;
+$c-brown: #491303;
+$c-white: #ffffff;
+$c-gray: #e5e5e5;
+$c-black: #000000;
+$c-tabs: #333333;
+$c-background: #f5f5f5;
+
+// Прозрачность
+$tabs-opacity: rgba(51, 51, 51, 0.2);
+$white-opacity: rgba(255, 255, 255, 0.5);
+$black-opacity: rgba(0, 0, 0, 0.5);
+$gray-opacity: rgba(51, 51, 51, 0.5);
+
+// Границы
+$radius: 10px;
+$radius-lg: 20px;
+$radius-sm: 5px;
+
+$c-border: #ebebeb;
+
+// Footer
+$f-bg: #150a06;
+$f-color: #3596f5;
+$f-text: 16px;
+$f-width: 1310px;
+$f-color-shadow: #211d1d;
+
+// Bootstrap
+// $modal-backdrop-bg: #0a1630;
+// $modal-backdrop-opacity: .9;
+
+// flex mixin
+@mixin flex($jc, $ai) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: $jc;
+  align-items: $ai;
+}
+

@@ -1,0 +1,130 @@
+@import './variable';
+
+* {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 0;
+}
+
+body {
+  min-height: 100%;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #fff;
+  background-color: $c-yellow;  
+  font-size: $fs-text;
+  line-height: 1.2;
+}
+
+.container {
+  padding: 0 15px;
+  max-width: $container;
+  margin: $mc;
+}
+
+.wrapper {
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  text-align: center;
+  flex: 1 1 auto;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(360deg, rgba($c-brown, .8), rgba($c-black, 0.5) 100%);;
+    z-index: -1;
+  }
+}
+
+section {
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.title-h1 {
+  font-weight: 700;
+  font-size: $fs-h1;
+  line-height: 1.4;
+}
+
+.title-h2 {
+  padding: 40px;
+  font-weight: 700;
+  font-size: $fs-h2;
+  line-height: 1.4;
+  color: $c-yellow;
+}
+
+.title-h3 {
+  font-weight: 700;
+  font-size: $fs-h3;
+  line-height: 1.4;
+  color: $c-yellow;
+}
+
+.title-h4 {
+  font-weight: 700;
+  font-size: $fs-h4;
+  line-height: 1.4;
+  color: $c-yellow;
+}
+
+.title-h5 {
+  font-weight: 700;
+  font-size: $fs-h5;
+  line-height: 1.4;
+  color: $c-yellow;
+}
+
+.title-h6 {
+  font-weight: 700;
+  font-size: $fs-h6;
+  line-height: 1.4;
+}
+
+.error-page {
+  position: relative;
+  padding: 50px;
+  font-size: 28px;
+  color: $c-white;
+
+  &__text {
+    padding: 20px 0;
+  }
+
+  &__link {
+    padding-top: 30px;
+    color: $c-white;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
