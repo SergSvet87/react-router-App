@@ -1,7 +1,7 @@
 export const PATHS = {
   home: '/',
   lessons: (textSearch = null) => (textSearch ? `lessons=${textSearch}` : 'lessons=react'),
-  lesson: (nameLesson = null) => (nameLesson ? `${nameLesson}` : '/lessonName/:lessonName'),
+  lesson: (nameLesson) => (nameLesson ? `lessonName:${nameLesson}` : 'lessonName:lessonName'),
 };
 
 export const LESSONS_URL = 'https://react-course-api.azurewebsites.net/lesson/';

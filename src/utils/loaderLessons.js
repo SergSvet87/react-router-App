@@ -1,9 +1,9 @@
 import { LESSONS_URL } from "./urls";
 
 export const loaderLessons = async ({ request }) => {
-  // const url = new URL(request.url);
-  // const searchTerm = url.searchParams.get(`lessons=${textSearch}`);
-  const res = await fetch(LESSONS_URL + 'react');
+  const url = new URL(request.url);
+  const searchTerm = url.searchParams.get(`lessons`);
+  const res = await fetch(LESSONS_URL + searchTerm);
 
   if (res.status === 404) {
     throw new Response("Not Found", { status: 404 });

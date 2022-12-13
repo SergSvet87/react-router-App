@@ -1,4 +1,5 @@
 import { useSearchParams } from 'react-router-dom';
+import { LessonsList } from '../components/lessons-list/lessons-list';
 
 import { SearchForm } from '../components/search-form/search-form';
 
@@ -13,6 +14,7 @@ export const SearchPage = () => {
         lessonsQuery={lessonsQuery}
         setSearchParams={setSearchParams}
       />
+      {searchParams ? <LessonsList /> : null}
     </section>
   );
 };

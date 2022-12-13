@@ -1,12 +1,10 @@
 import { useState } from 'react';
 
 // import { useInput } from '../../hooks/useInput'
-import { PATHS } from '../../utils/urls';
 import { Input } from './input';
 import { Button } from './button';
 
 import './search-form.scss';
-import { NavLink } from 'react-router-dom';
 
 export const SearchForm = ({ lessonsQuery, setSearchParams }) => {
   const [textSearch, setTextSearch] = useState(lessonsQuery);
@@ -20,7 +18,7 @@ export const SearchForm = ({ lessonsQuery, setSearchParams }) => {
 
     setTextSearch(valueInput);
 
-    if (valueInput.length < 3 || valueInput.length > 10) {
+    if (valueInput.length < 1 || valueInput.length > 10) {
       setTextInputError('Incorrect name length!');
 
       if (!valueInput) {
@@ -33,13 +31,13 @@ export const SearchForm = ({ lessonsQuery, setSearchParams }) => {
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
-
     const query = textSearch;
 
     const params = {};
 
     if (query.length) params.lessons = query;
     setSearchParams(params);
+    setTextSearch('');
 
     setTextInputBlur(true);
   };
@@ -74,9 +72,7 @@ export const SearchForm = ({ lessonsQuery, setSearchParams }) => {
         </h6>
       )}
 
-      <NavLink to={PATHS.lessons(textSearch)}>
-        <Button className="form__btn" type="submit" text="Search" />
-      </NavLink>
+      <Button className="form__btn" type="submit" text="Search" />
     </form>
   );
 };

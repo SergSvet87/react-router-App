@@ -4,11 +4,10 @@ import { PATHS } from './utils/urls';
 import { Layout } from './components/layout';
 import { Loader } from './components/loader/loader';
 import { loaderLessons } from './utils/loaderLessons';
-// import { loaderLesson } from './utils/loaderLesson';
+import { loaderLessonByName } from './utils/loaderLessonByName';
 
 import { ErrorPage } from './pages/error-page';
 import { SearchPage } from './pages/search-page';
-import { LessonsPage } from './pages/lessons-page';
 import { LessonInfoPage } from './pages/lesson-info-page';
 import { NotFoundPage } from './pages/not-found-page';
 
@@ -21,16 +20,12 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <SearchPage />,
-      },
-      {
-        path: PATHS.lessons(),
-        element: <LessonsPage />,
         loader: loaderLessons,
       },
       {
         path: PATHS.lesson(),
         element: <LessonInfoPage />,
-        loader: loaderLessons,
+        loader: loaderLessonByName,
       },
       {
         path: '*',
