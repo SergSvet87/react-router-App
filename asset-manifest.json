@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/react-router-App/static/css/main.0ec2d388.css",
-    "main.js": "/react-router-App/static/js/main.a3dc3d56.js",
+    "main.css": "/react-router-App/static/css/main.6a2ea809.css",
+    "main.js": "/react-router-App/static/js/main.fcb5dfe3.js",
+    "static/media/404.png": "/react-router-App/static/media/404.e97d3c7f9e9cdc370373.png",
     "static/media/bg-home.jpg": "/react-router-App/static/media/bg-home.7012b84929a60454550f.jpg",
     "static/media/mainLogo.png": "/react-router-App/static/media/mainLogo.c6fbe1b8934632d26774.png",
     "static/media/img-home.png": "/react-router-App/static/media/img-home.b85954a12b9804ea9994.png",
     "index.html": "/react-router-App/index.html",
-    "main.0ec2d388.css.map": "/react-router-App/static/css/main.0ec2d388.css.map",
-    "main.a3dc3d56.js.map": "/react-router-App/static/js/main.a3dc3d56.js.map"
+    "main.6a2ea809.css.map": "/react-router-App/static/css/main.6a2ea809.css.map",
+    "main.fcb5dfe3.js.map": "/react-router-App/static/js/main.fcb5dfe3.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ec2d388.css",
-    "static/js/main.a3dc3d56.js"
+    "static/css/main.6a2ea809.css",
+    "static/js/main.fcb5dfe3.js"
   ]
 }
