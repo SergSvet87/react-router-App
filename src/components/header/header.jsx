@@ -26,7 +26,7 @@ export const Header = () => {
             </li>
 
             <li className="list-header__item">
-              <NavLink to={PATHS.lessons()}>Search</NavLink>
+              <NavLink to={PATHS.lesson()}>Search</NavLink>
             </li>
 
             <li className="list-header__item">

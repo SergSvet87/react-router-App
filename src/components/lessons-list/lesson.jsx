@@ -1,5 +1,4 @@
 import { React } from 'react';
-import { NavLink } from 'react-router-dom';
 
 import './lesson.scss';
 
@@ -16,18 +15,6 @@ export const Lesson = ({ lesson }) => {
         <i>{lesson.name}</i>
       </h5>
       <p className="lesson__type">{lesson.type}</p>
-      {lesson.youtube ? (
-        <NavLink
-          className="lesson__link"
-          to={lesson.youtube}
-          target="_blank"
-          rel="noreferrer"
-        >
-          Youtube link
-        </NavLink>
-      ) : (
-        'Link under development'
-      )}
     </>
   );
 };

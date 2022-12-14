@@ -1,8 +1,8 @@
 import { NavLink, useRouteError } from 'react-router-dom';
 
-import { Home } from '../components/home/home';
-import { Footer } from '../components/footer/footer';
-import { PATHS } from '../utils/urls';
+import { Home } from '../home/home';
+import { Footer } from '../footer/footer';
+import { PATHS } from '../../utils/urls';
 
 export const ErrorPage = () => {
   const error = useRouteError();

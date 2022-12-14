@@ -1,16 +1,16 @@
 export const ErrorMessage = ({ errorNumber }) => {
 	switch (errorNumber) {
 		case 500:
-			return 'Спробуй ще раз!';
+			return 'try again!';
 		case 501:
-			return 'Запит не опрацьований! Спробуй ще раз!';
+			return 'The request has not been processed! Try again!';
 		case 400:
-			return 'Дані не вірні! :( ';
+			return 'The data is not correct! :( ';
 		case 401:
-			return 'Ви не авторизувалися! :(';
+			return 'You are not logged in! :(';
 		case 404:
-			return 'Ресурс не знайдено! :( ';
+			return 'Resource not found! :( ';
 		default:
-			return 'Проблеми з сервером, ми працюємо над цим! :(';
+			return 'Server problems, we are working on it! :(';
 	}
 };

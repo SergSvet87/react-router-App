@@ -1,15 +1,12 @@
-// import { useState, useEffect } from 'react';
-import { NavLink, useLoaderData, useParams } from 'react-router-dom';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import { PATHS } from '../../utils/urls';
 import { Lesson } from './lesson';
 
 import './lessons-list.scss';
 
-export const LessonsList = () => {
-  const lessons = useLoaderData();
-  const nameLesson = useParams();
-  const data = localStorage.setItem('lessons', JSON.stringify(lessons));
+export const LessonsList = ({ lessons }) => {
 
   return (
     <ul className="list">

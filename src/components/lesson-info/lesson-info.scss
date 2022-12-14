@@ -1,29 +1,39 @@
+@import '../../variable';
+
 .lesson-info {
   margin-bottom: 50px;
   padding-bottom: 20px;
-  border-bottom: 1px solid rgb(53, 103, 125);
+  font-size: 20px;
+
+  &__container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__top {
+    width: 100%;
+    @include flex(space-evenly, center);
+    margin-bottom: 20px;
+  }
 
   &__description {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    text-align: center;
     margin-bottom: 10px;
 
     h2 {
-      margin: 0;
-      padding: 0;
-      margin-right: 25px;
+      color: $c-yellow;
     }
 
     p {
-      font-size: 12px;
+      font-size: 16px;
       color: rgb(0, 255, 94);
     }
   }
 
   h5 {
     font-size: 20px;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
   }
 
   &__type {
@@ -32,12 +42,26 @@
   }
 
   &__link {
-    font-size: 20px;
+    padding: 8px 10px;
+    font-size: 24px;
+    font-style: italic;
+    color: aqua;
     
 
     &:hover {
       color: rgb(0, 255, 94);
       transition: color .4s ease-in-out;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba($color: #000000, $alpha: .4);
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin-bottom: 25px;
+
+    li {
+      margin-bottom: 10px;
     }
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 
-import { LessonInfo } from '../components/lesson-info/lesson-info';
+import { LessonInfo } from '../lesson-info/lesson-info';
 
 export const LessonInfoPage = () => {
   const lesson = useLoaderData();

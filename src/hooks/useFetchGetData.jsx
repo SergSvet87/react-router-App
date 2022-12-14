@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { LESSONS_URL } from '../utils/urls';
-
-export const useFetchGetData = () => {
+export const useFetchGetData = (url) => {
   const [response, setResponse] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -11,7 +9,7 @@ export const useFetchGetData = () => {
   useEffect(() => {
     setLoading(true);
 
-    fetch(LESSONS_URL)
+    fetch(url)
       .then((res) => {
         if (res.ok) {
           return res.json();
@@ -39,7 +37,7 @@ export const useFetchGetData = () => {
         setError(e);
         setErrorMessage(e.message);
       });
-  }, []);
+  }, [url]);
 
   return { response, loading, error, errorMessage };
 };
